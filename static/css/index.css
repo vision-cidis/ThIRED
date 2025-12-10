@@ -290,6 +290,25 @@ body {
   font-weight: 500;
 }
 
+/* --- Two images per carousel slide (stacked) --- */
+.results-carousel .carousel-two-images{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;           
+  align-items: stretch;
+}
+
+/* Make carousel pair images smaller (without distortion) */
+.results-carousel .carousel-two-images img{
+  width: 100%;
+  max-width: 768px;       
+  max-height: 50vh;       
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;        
+}
+
+
 /* Pagination and Misc Improvements */
 .slider-pagination .slider-page {
   background: var(--primary-color);
@@ -750,4 +769,14 @@ a:focus {
 }
 
 
+.dataset-ref{
+  font-size: 0.80rem;   /* más pequeña (ajusta a 0.75rem si quieres aún más) */
+  line-height: 1.25;
+  opacity: 0.85;        /* opcional: se ve como nota */
+  margin-top: 0.5rem;
+}
+.dataset-ref strong{
+  font-weight: 600;
+  opacity: 0.9;
+}
 
