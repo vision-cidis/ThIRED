@@ -8,7 +8,7 @@
   <!-- TODO: Replace with your paper title -->
   <meta name="title" content="Thermal Infrared for Edge Detection Dataset (ThIRED)">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="The first collection of thermal IR images with pixel-level edge annotations">
+  <meta name="description" content="The first publicly available collection of thermal IR images with pixel-level edge annotations">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
   <meta name="keywords" content="Edge Detection, Infrared Image, Computer Vision">
   <meta name="robots" content="index, follow">
@@ -18,7 +18,7 @@
   <!-- TODO: Same as paper title above -->
   <meta property="og:title" content="Thermal Infrared for Edge Detection Dataset (ThIRED)">
   <!-- TODO: Same as description above -->
-  <meta property="og:description" content="The first collection of thermal IR images with pixel-level edge annotations">
+  <meta property="og:description" content="The first publicly available collection of thermal IR images with pixel-level edge annotations">
   <!-- TODO: Replace with your actual website URL -->
   <meta property="og:url" content="https://anonymous.4open.science/w/ThIRED-D969/">
   <meta property="article:tag" content="Edge Detection">
@@ -29,7 +29,7 @@
   <!-- TODO: Same as paper title above -->
   <meta name="twitter:title" content="Thermal Infrared for Edge Detection Dataset (ThIRED)">
   <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="The first collection of thermal IR images with pixel-level edge annotations">
+  <meta name="twitter:description" content="The first publicly available collection of thermal IR images with pixel-level edge annotations">
   
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
@@ -141,14 +141,34 @@
 
                   <!-- TODO: Replace with your Kaggle repository URL -->
                   <span class="link-block">
-                    <a href="https://www.kaggle.com/datasets/henryvelesacalara/thlred" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
+                    <a class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
-                        <i class="fas fa-download"></i>
+                        <i class="fas fa-file-pdf"></i>
                       </span>
-                      <span>Download</span>
+                      <span>Paper</span>
                     </a>
                   </span>
+
+
+                  <span class="link-block">
+                    <a class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Download Dataset</span>
+                    </a>
+                  </span>
+
+                  <span class="link-block">
+                    <a class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>GitHub repository</span>
+                    </a>
+                  </span>
+
+
             </div>
           </div>
         </div>
@@ -165,17 +185,18 @@
 
       <div class="content">
         <p>
-          ThIRED is the first collection of thermal IR images with pixel-level edge annotations. This dataset consists of
+          ThIRED is the first publicly available collection of thermal IR images with pixel-level edge annotations. This dataset consists of
           20 thermal infrared images (1024 × 768 pixels), selected from the multi-scenario multi-modality dataset, also
           known as M3FD<sup>*</sup>.
         </p>
 
         <p>
-          To ensure high-quality evaluation and training, pixel-accurate ground truth edge maps were generated through a
-          rigorous manual annotation process using the LabelBox platform. Unlike automated edge generation, this detailed
-          human supervision ensures that the ground truth preserves the full structural integrity of the thermal scene.
-          On average, each image contains approximately 900 edges, annotated as polylines, resulting in a total of around
-          18,000 annotated edges.
+          To ensure high-quality evaluation and training, pixel-accurate ground-truth edge maps were generated through
+          a rigorous manual annotation process using the LabelBox platform. As a result, the annotation of a single
+          image required approximately 8 to 12 hours of manual work. On average, each image contains about 1,500 edge
+          instances annotated as polylines, resulting in a total of 30,184 annotated edges in the ThIRED dataset. Therefore,
+          although ThIRED contains a relatively small number of images, it represents a highly labor-intensive dataset in terms
+          of pixel-level edge annotation
         </p>
 
         <!-- Referencia a M3FD -->
@@ -259,11 +280,10 @@
         </button>
       </div>
       <p>If you use the ThIRED dataset, please cite the following paper</p>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
+      <pre id="bibtex-code"><code>@article{YourPaperKey,
         title={Your Paper Title Here},
         author={First Author and Second Author and Third Author},
-        journal={Conference},
-        year={2024},
+        year={2027},
         url={https://your-domain.com/your-project-page}
         }</code>
       </pre>
