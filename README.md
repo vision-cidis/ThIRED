@@ -5,7 +5,7 @@
 Coming soon
 
 ## Citation
-If you use the Synthetic GT, please cite the following paper 
+If you use the Dataset, please cite the following paper 
 
 ```
 @article{YourPaperKey,
